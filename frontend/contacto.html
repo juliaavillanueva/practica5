@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compra Tecnológica - Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Carrito de Compra Tecnológica</h1>
+        <p>Formulario de contacto y pedido</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="carrito.html">Carrito</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="container">
+
+        <section>
+            <h2>Realiza tu pedido</h2>
+            <p>
+                En este formulario el usuario puede introducir sus datos personales,
+                seleccionar un producto y dejar observaciones adicionales. Este apartado
+                permite incorporar formularios web, uno de los elementos obligatorios de la práctica.
+            </p>
+
+            <form action="#" method="post">
+                <div>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+
+                <div>
+                    <label for="direccion">Dirección de envío:</label>
+                    <input type="text" id="direccion" name="direccion">
+                </div>
+
+                <div>
+                    <label for="producto">Producto de interés:</label>
+                    <select id="producto" name="producto" required>
+                        <option value="">-- Selecciona una opción --</option>
+                        <option value="auriculares">Auriculares inalámbricos</option>
+                        <option value="teclado">Teclado mecánico</option>
+                        <option value="smartwatch">Smartwatch deportivo</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" max="10" value="1">
+                </div>
+
+                <div>
+                    <label for="pago">Método de pago preferido:</label>
+                    <select id="pago" name="pago">
+                        <option value="tarjeta">Tarjeta</option>
+                        <option value="bizum">Bizum</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="comentarios">Comentarios adicionales:</label>
+                    <textarea id="comentarios" name="comentarios" placeholder="Escribe aquí cualquier observación sobre el pedido..."></textarea>
+                </div>
+
+                <button type="submit">Enviar formulario</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Información de contacto</h2>
+            <p><strong>Email:</strong> contacto@techcart.com</p>
+            <p><strong>Teléfono:</strong> +34 600 123 456</p>
+            <p><strong>Horario:</strong> Lunes a viernes de 9:00 a 18:00</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Carrito de Compra Tecnológica | Página de contacto</p>
+    </footer>
+
+</body>
+</html>

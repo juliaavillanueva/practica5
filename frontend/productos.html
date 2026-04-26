@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compra Tecnológica - Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Carrito de Compra Tecnológica</h1>
+        <p>Catálogo de productos tecnológicos</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="carrito.html">Carrito</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="container">
+
+        <section>
+            <h2>Nuestro catálogo</h2>
+            <p id="mensaje-carrito"></p>
+            <p>
+                En esta sección se muestran algunos de los productos disponibles en la tienda.
+            </p>
+
+            <div class="cards">
+
+                <article class="card">
+                    <img src="https://cdn.t-nb.com/image/upload/c_pad,w_500,h_500/VISUEL_HD/EBFEATWH3/03303170113073_C1N0_s01.jpg" alt="Auriculares inalámbricos">
+                    <h3>Auriculares inalámbricos</h3>
+                    <p>Precio: 59,99 €</p>
+                    <p>Conexión Bluetooth, cancelación de ruido y batería de larga duración.</p>
+                    <button onclick="addProducto(1, 59.99)">Añadir al carrito</button>
+                </article>
+
+                <article class="card">
+                    <img src="https://luegopago.blob.core.windows.net/content-process/products-images/prod/2651/9be6eebf-af5d-4e2a-bf9f-7b80e63d57ed.webp" alt="Teclado mecánico">
+                    <h3>Teclado mecánico</h3>
+                    <p>Precio: 79,99 €</p>
+                    <p>Teclas resistentes, iluminación LED y excelente experiencia de escritura.</p>
+                    <button onclick="addProducto(2, 79.99)">Añadir al carrito</button>
+                </article>
+
+                <article class="card">
+                    <img src="https://moviliario.es/49726-large_default/reloj-inteligente-ws1928-negro.jpg" alt="Smartwatch">
+                    <h3>Smartwatch deportivo</h3>
+                    <p>Precio: 99,99 €</p>
+                    <p>Monitorización de actividad, ritmo cardiaco y notificaciones inteligentes.</p>
+                    <button onclick="addProducto(3, 99.99)">Añadir al carrito</button>
+                </article>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Tabla comparativa</h2>
+
+            <table>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Categoría</th>
+                    <th>Característica principal</th>
+                </tr>
+                <tr>
+                    <td>Auriculares inalámbricos</td>
+                    <td>59,99 €</td>
+                    <td>Audio</td>
+                    <td>Cancelación de ruido</td>
+                </tr>
+                <tr>
+                    <td>Teclado mecánico</td>
+                    <td>79,99 €</td>
+                    <td>Periféricos</td>
+                    <td>Iluminación LED</td>
+                </tr>
+                <tr>
+                    <td>Smartwatch deportivo</td>
+                    <td>99,99 €</td>
+                    <td>Wearables</td>
+                    <td>Control de actividad física</td>
+                </tr>
+            </table>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Carrito de Compra Tecnológica | Catálogo de productos</p>
+    </footer>
+
+    <!-- IMPORTANTE -->
+    <script src="app.js"></script>
+
+</body>
+</html>

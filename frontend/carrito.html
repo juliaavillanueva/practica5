@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compra Tecnológica - Carrito</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Carrito de Compra Tecnológica</h1>
+        <p>Resumen del carrito de compra</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="carrito.html">Carrito</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="container">
+
+        <section>
+            <h2>Carrito actual</h2>
+            <p>
+                Aquí se muestran los productos añadidos al carrito en tiempo real.
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio unitario</th>
+                        <th>Cantidad</th>
+                        <th>Total</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tbody-carrito"></tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Resumen de compra</h2>
+
+            <p><strong>Total final:</strong> <span id="total">0 €</span></p>
+
+            <p>
+                Si deseas formalizar tu pedido, puedes dirigirte a la página de contacto.
+            </p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Carrito de Compra Tecnológica | Carrito de compra</p>
+    </footer>
+
+    <script src="app.js"></script>
+
+    <script>
+        cargarCarrito();
+    </script>
+
+</body>
+</html>
